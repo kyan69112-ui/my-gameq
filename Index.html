@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cabybara Road Crosser</title>
+<style>
+body{
+    font-family: Arial;
+    background:#87c96b;
+    margin:0;
+}
+
+header{
+    background:#4a7c3b;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background:#2f4f2f;
+    padding:10px;
+    text-align:center;
+}
+
+nav button{
+    padding:10px 20px;
+    margin:5px;
+    border:none;
+    background:#6fae5a;
+    color:white;
+    cursor:pointer;
+}
+
+section{
+    padding:30px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+}
+
+.update{
+    border-left:5px solid #6fae5a;
+}
+</style>
+
+<script>
+function showPage(page){
+    document.getElementById("home").style.display="none";
+    document.getElementById("updates").style.display="none";
+
+    document.getElementById(page).style.display="block";
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>🦫 Cabybara Road Crosser</h1>
+<p>Help the capybara cross the road!</p>
+</header>
+
+<nav>
+<button onclick="showPage('home')">Home</button>
+<button onclick="showPage('updates')">Updates</button>
+</nav>
+
+<!-- HOME PAGE -->
+<section id="home">
+
+<div class="card">
+<h2>About the Game</h2>
+<p>
+Cabybara Road Crosser is a fun game where you help a capybara cross busy roads,
+avoid cars, and survive as long as possible!
+</p>
+</div>
+
+<div class="card">
+<h2>Capybara Model</h2>
+
+<!-- Replace with your model image -->
+<img src="capybara.png" width="200">
+
+<p>This is the capybara used in the game.</p>
+</div>
+
+</section>
+
+
+<!-- UPDATES PAGE -->
+<section id="updates" style="display:none">
+
+<h2>Game Updates</h2>
+
+<div class="card update">
+<h3>Update 0.1</h3>
+<p><b>Date:</b> 2026</p>
+
+<ul>
+<li>Added capybara player</li>
+<li>Added road</li>
+<li>First cars</li>
+</ul>
+</div>
+
+</section>
+
+</body>
+</html>
